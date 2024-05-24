@@ -4,6 +4,8 @@ In this project, we will implement Azure Databricks, Azure Data Lake Storage Gen
 
 The data that we are going to use in this project is from http://ergast.com/mrd/.
 
+## Project Requirements
+
 The project requirements are as follow:
 
 **1. Data Ingestion Requirements**
@@ -43,9 +45,11 @@ The project requirements are as follow:
 -	Ability to see history and time travel.
 -	Ability to roll back to a previous version.
 
-The data architecture that will be implemented in this project is as below image:
+## Solution Architecture
+The solution architecture that will be implemented in this project is as below image:
 ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/ec9c4496d91100b1d639d5034b9636e39fbd8a35/solution%20architecture.png?raw=true)
 
+## Databricks Report
 Finally, the output from the analysis that we have done is shown in below report:
 ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/fcbbaf64c41287d424a426f6a021eb74a98d4a60/report/Dominant%20Drivers%20Report.png?raw=true)
 ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/fcbbaf64c41287d424a426f6a021eb74a98d4a60/report/Dominant%20Teams%20Report.png?raw=true)
