@@ -2,7 +2,7 @@
 
 In this project, we will implement Azure Databricks, Azure Data Lake Storage Gen2 and Azure Data Factory for analysing and reporting on Formula1 motor racing data.
 
-The data that we are going to use in this project is from http://ergast.com/mrd/.
+The data that we are going to use in this project is from http://ergast.com/mrd/. The language that we will be using are pyspark and SQL.
 
 ## Project Requirements
 
