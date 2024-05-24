@@ -34,5 +34,5 @@ You can use Access Keys, SAS Token or Service Principle for the authentication t
 ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/d5c27ee5a63bac89c8dcb02d5947538cdfba37f2/Accessing%20ADLS%20Gen2%20from%20Databricks/KeyVault%20properties.png?raw=true)
 
 
-4. 4.	Configure Databricks to access the storage account via Service Principal using Spark Config. Use Databricks Secrets Utility to retrieve the secret value from Azure Key Vault.(dbutils.secrets.get(scope=’<Databricks secret scope>’, key=’<secret key>’))
+4. Configure Databricks to access the storage account via Service Principal using Spark Config. Use Databricks Secrets Utility to retrieve the secret value from Azure Key Vault.(dbutils.secrets.get(scope=’<Databricks secret scope>’, key=’<secret key>’))
 ![alt_text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/d5c27ee5a63bac89c8dcb02d5947538cdfba37f2/Accessing%20ADLS%20Gen2%20from%20Databricks/mount%20ADLS%20(python).png?raw=true)
