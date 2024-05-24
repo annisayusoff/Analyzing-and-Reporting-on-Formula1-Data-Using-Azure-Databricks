@@ -1,0 +1,10 @@
+### This section will provide you the steps to create ADLS Gen2 to be used in this project
+
+We will use Azure Blob Storage and serve it as our data lake. Azure blob storage account can be created in Azure Portal as below.
+ 
+
+Ensure that you enable the below option to create ADLS Gen2. Else, you will only create the ADLS Gen1. You may wonder the difference between ADLS Gen2 and ADLS. Basically, ADLS Gen2 provide hierarchical namespace instead of flat namespace that is offered in Gen1. This means that ADLS Gen2 uses directories to organize data, which provides a more efficient way to manage large amounts of data.
+ 
+
+Then, you can create the containers to store the data and finally you can start uploading your data to the container.
+ 
