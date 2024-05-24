@@ -4,6 +4,7 @@ You can use Access Keys, SAS Token or Service Principle for the authentication t
 ![alt_text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/d5c27ee5a63bac89c8dcb02d5947538cdfba37f2/Accessing%20ADLS%20Gen2%20from%20Databricks/Service%20Principal.png?raw=true)
 
 ## Pre-requisite:
+You must already have these Azure services before proceeding to the next section.
 1. ADLS Gen2
 2. Azure Key Vault
 3. Azure AD Application
