@@ -51,5 +51,5 @@ The solution architecture that will be implemented in this project is as below i
 
 ## Databricks Report
 Finally, the output from the analysis that we have done is shown in below report:
-![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/fcbbaf64c41287d424a426f6a021eb74a98d4a60/report/Dominant%20Drivers%20Report.png?raw=true)
-![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/fcbbaf64c41287d424a426f6a021eb74a98d4a60/report/Dominant%20Teams%20Report.png?raw=true)
+![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/1774c2cf390b3f3fb9aa85229f641d8de48cd0aa/report/Dominant%20Drivers%20Report.png?raw=true)
+![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/1774c2cf390b3f3fb9aa85229f641d8de48cd0aa/report/Dominant%20Teams%20Report.png?raw=true)
