@@ -34,5 +34,15 @@ You can use Access Keys, SAS Token or Service Principle for the authentication t
 ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/d5c27ee5a63bac89c8dcb02d5947538cdfba37f2/Accessing%20ADLS%20Gen2%20from%20Databricks/KeyVault%20properties.png?raw=true)
 
 
-4. Configure Databricks to access the storage account via Service Principal using Spark Config. Use Databricks Secrets Utility to retrieve the secret value from Azure Key Vault.(dbutils.secrets.get(scope=’<Databricks secret scope>’, key=’<secret key>’))
+4. Configure Databricks to access the storage account via Service Principal using Spark Config. Use Databricks Secrets Utility to retrieve the secret value from Azure Key Vault.(dbutils.secrets.get(scope=’<Databricks secret scope>’, key=’<secret key>’)). Then, mount the ADLS Gen2 using Spark Config.
+   
 ![alt_text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/d5c27ee5a63bac89c8dcb02d5947538cdfba37f2/Accessing%20ADLS%20Gen2%20from%20Databricks/mount%20ADLS%20(python).png?raw=true)
+
+![alt_text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/d5846a9b13f43370cf299ec034075a35faff931b/Accessing%20ADLS%20Gen2%20from%20Databricks/mount%20ADLS%20(python)%20-%20code.png?raw=true)
+
+
+5. Assign role Storage Blob Data Contributor to the Data Lake.
+Storage Account > Access Control (IAM) > + Add > Add Role Assignment > Storage Blob Contributor > Assign access to User, group, or service principal > Select members (select the Service Principal that has been registered in the previous step) 
+
+
+**After you have done with the previous steps, you can start accessing the data from the storage account.**
