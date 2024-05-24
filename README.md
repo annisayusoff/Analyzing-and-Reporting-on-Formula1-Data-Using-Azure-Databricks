@@ -41,4 +41,6 @@ The project requirements are as follow:
 **6. Other Non-Functional Requirements**
 -	Ability to delete individual records.
 -	Ability to see history and time travel.
--	Ability to roll back to a previous version. 
+-	Ability to roll back to a previous version.
+
+The solution architecture is as below image:
