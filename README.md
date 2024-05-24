@@ -43,5 +43,9 @@ The project requirements are as follow:
 -	Ability to see history and time travel.
 -	Ability to roll back to a previous version.
 
-The solution architecture is as below image:
-![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/39fd0dd46ce14e11a9bd431ef3c51fc35c75e0c9/solution%20architecture.png?raw=true)
+The data architecture that will be implemented in this project is as below image:
+![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/ec9c4496d91100b1d639d5034b9636e39fbd8a35/solution%20architecture.png?raw=true)
+
+Finally, the output from the analysis that we have done is shown in below report:
+![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/fcbbaf64c41287d424a426f6a021eb74a98d4a60/report/Dominant%20Drivers%20Report.png?raw=true)
+![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/fcbbaf64c41287d424a426f6a021eb74a98d4a60/report/Dominant%20Teams%20Report.png?raw=true)
