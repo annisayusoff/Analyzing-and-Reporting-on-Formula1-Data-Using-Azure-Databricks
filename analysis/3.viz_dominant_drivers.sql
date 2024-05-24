@@ -20,7 +20,7 @@ ORDER BY avg_points DESC;
 
 -- COMMAND ----------
 
-select * from v_dominant_drivers
+select * from v_dominant_drivers;
 
 -- COMMAND ----------
 
