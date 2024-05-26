@@ -47,6 +47,6 @@ Now the ADF has the contributor access to the Databricks workspace.
    i. p_data_source : @variables('v_data_source')
    ii. p_file_date : @formatDateTime(pipeline().parameters.p_window_end_date, 'yyy-MM-dd')
 
-[!alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/9623bff8579399be6514a2e7dd343d3514a7f782/Azure%20Data%20Factory/Databricks%20activity%20parameters.png?raw=true)
+[!alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/081761825230524f97e7fe329414a9da93146e24/Azure%20Data%20Factory/Databricks%20activity%20parameters.png?raw=true)
 
 8. 
