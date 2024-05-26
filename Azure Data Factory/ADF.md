@@ -40,12 +40,12 @@ Now the ADF has the contributor access to the Databricks workspace.
 4. Create a pipeline variable by clicking anywhere outside the activity for dynamic parsing of parameter value for **file_dat**e and **data_source** that we have created in Databricks notebook.
    ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/94f25675f8f377ea19e0afeae6c5f4bcaf822f95/Azure%20Data%20Factory/pipeline%20variable%20(v_data_source).png?raw=true)
 
-   ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/tree/0f65de7ab375021e7d856bf6d7674c1dc691074d/Azure%20Data%20Factory?raw=true)
+   ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/9623bff8579399be6514a2e7dd343d3514a7f782/Azure%20Data%20Factory/pipeline%20variable%20%20(p_file_date).png?raw=true)
    
 5. Since we use databricks widgets parameter, **"p_data_source"** and **"p_file_date"**, we need to specify this in the configuration of the pipeline **activity** in the **"Base parameters"** section in **"Settings"** tab. To make it dynamic, we will define a dynamic content by using the variable and parameter of the pipeline that we have created in step 4, instead of hard code it as follows:
    i. p_data_source : @variables('v_data_source')
    ii. p_file_date : @formatDateTime(pipeline().parameters.p_window_end_date, 'yyy-MM-dd')
 
-   [!alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/2fc0bb2b00e4dd6ddd8cf4fcffc8a83f2520edca/Azure%20Data%20Factory/Databricks%20activity%20parameters.png?raw=true)
+   [!alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/9623bff8579399be6514a2e7dd343d3514a7f782/Azure%20Data%20Factory/Databricks%20activity%20parameters.png?raw=true)
 
 6. 
