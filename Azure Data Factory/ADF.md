@@ -93,6 +93,7 @@ In this section, I will explain on how to automate the process of ETL in Databri
 1. Clone the pipeline we have created in Part 4 and name it **"pl_transform_formula1_data"**.
 2. Change the configuration of the Databricks Notebook activity so that it will link to the correct notebook for transformation.
 3. The final pipeline should look like this:
+
    ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/c8ea5b030e90752a12f57b08bae79ef0d849c42b/Azure%20Data%20Factory/pl_transform.png?raw=true)
 
 
@@ -112,11 +113,14 @@ In this section, I will explain on how to automate the process of ETL in Databri
 2. Name the trigger as tr_process_formula1_data.
 3. Select the **"Tumbling window"** trigger. The date should have a 1 week duration. The end date must match the day that the race file will come in into the ADLS. 
 4. The trigger configuration should look like this:
+   
    ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/7428787e08d558df42f50fde304c700f1ea16fb8/Azure%20Data%20Factory/trigger1.png?raw=true)
+   
    ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/7428787e08d558df42f50fde304c700f1ea16fb8/Azure%20Data%20Factory/trigger2.png?raw=true)
-5. Add the created trigger to the pl_process_formula1_data.
-6. A configuration window of the trigger will pop up and you will be prompted to edit the trigger and pipeline parameter (p_window_end_date)
-7. Since the file date is the same as the end date of the trigger duration, we will make this parameter dynamic by parsing the end date of the trigger duration to the pipeline parameter.
+   
+6. Add the created trigger to the pl_process_formula1_data.
+7. A configuration window of the trigger will pop up and you will be prompted to edit the trigger and pipeline parameter (p_window_end_date)
+8. Since the file date is the same as the end date of the trigger duration, we will make this parameter dynamic by parsing the end date of the trigger duration to the pipeline parameter.
    p_window_end_date = @trigger().outputs.windowEndTime
 
    ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/eeed038a29ebd16fee22e32d1985a05da43477c1/Azure%20Data%20Factory/trigger3.png?raw=true)
