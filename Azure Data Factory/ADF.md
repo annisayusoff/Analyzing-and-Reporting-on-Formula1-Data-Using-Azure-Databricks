@@ -103,6 +103,7 @@ In this section, I will explain on how to automate the process of ETL in Databri
 3. Add **"Execute Pipeline"** activity and name it **Execute Ingestion**. Select pl_ingest_formula1_data pipeline in the **"Invoked pipeline"** field in the **"Settings"** tab. Define the parameter as @pipeline().parameters.p_window_end_date.
 4. Repeat for pl_transform_formula1_data pipeline and name it **"Execut Transformation"** and link these 2 pipelines.
 5. The final pipeline should look like this:
+
    ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/9c4faa38f3c42375543a2641bfc76273e81cb279/Azure%20Data%20Factory/pl_process.png?raw=true)
 
 
