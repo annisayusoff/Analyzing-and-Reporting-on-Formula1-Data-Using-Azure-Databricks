@@ -67,6 +67,7 @@ In this section, I will explain on how to automate the process of ETL in Databri
   5. Since we use databricks widgets parameter, **"p_data_source"** and **"p_file_date"**, we need to specify this in the configuration of the pipeline **activity** in the **"Base parameters"** section in **"Settings"** tab. To make it dynamic, we will define a dynamic content by using the variable and parameter of the pipeline that we have created in step 4, instead of hard code it as follows:
      - p_data_source : @variables('v_data_source')
      - p_file_date : @formatDateTime(pipeline().parameters.p_window_end_date, 'yyy-MM-dd')
+       
        ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/02451a4b8bea7fdfd2d8a47d8c4ac884833b06ff/Azure%20Data%20Factory/Databricks%20activity%20parameters.png?raw=true)
   
   6. Repeat the same for other ingestion files. Make sure that there is no dependencies between each of the activities. Run it in parallel.
@@ -79,13 +80,15 @@ In this section, I will explain on how to automate the process of ETL in Databri
   
   2. In the **"Dataset"** tab, select the dataset that we have created in Part 3, **ds_formula1_raw**. Parse the pipeline parameter to the dataset parameter and select **"Exists"** in the **"argument"** field as below image:
      p_window_end_date = @pipeline().parameters.p_window_end_date
+     
      ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/f7c91cb7168feb257922b8adca06d92b3c91f892/Azure%20Data%20Factory/get-metadata1.png?raw=true)
   
-  3. Add **If Condition** activity. Define the **Expression** as **@activity("Get Folder Details").output.Exists**
+  4. Add **If Condition** activity. Define the **Expression** as **@activity("Get Folder Details").output.Exists**
   
      ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/c8ea5b030e90752a12f57b08bae79ef0d849c42b/Azure%20Data%20Factory/pl_ingest_1.png?raw=true)
   
-  4. Copy all the activities that we have created in Part 4 and paste it in the True statement of the if condition. Leave the False statement empty. The pipeline should look like below image (you can see that there are 8 activities in True statement. This is because we have 8 files to be ingested):
+  5. Copy all the activities that we have created in Part 4 and paste it in the True statement of the if condition. Leave the False statement empty. The pipeline should look like below image (you can see that there are 8 activities in True statement. This is because we have 8 files to be ingested):
+     
      ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/c8ea5b030e90752a12f57b08bae79ef0d849c42b/Azure%20Data%20Factory/pl_ingest_2.png?raw=true)
 
 
