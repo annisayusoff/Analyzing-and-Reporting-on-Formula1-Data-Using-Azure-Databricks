@@ -61,13 +61,16 @@ Finally, the output from the analysis that we have done is shown in below report
 ## Pipeline in ADF
 The pipeline can be automatically invoked using trigger in ADF. Below is the final pipeline to process the formula1 data. You can read more about the process to create this pipeline here : https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/3ae23c99197d9e2456a6c11c3513ef30b0517e37/Azure%20Data%20Factory/ADF.md. 
 
-### pl_process_formula1_data
+**pl_process_formula1_data**
+
 ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/3ae23c99197d9e2456a6c11c3513ef30b0517e37/Azure%20Data%20Factory/pl_process.png?raw=true)
 
-### pl_ingest_formula1_data
+**pl_ingest_formula1_data**
+
 ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/3ae23c99197d9e2456a6c11c3513ef30b0517e37/Azure%20Data%20Factory/pl_ingest_2.png?raw=true)
 
-### pl_transform_formula1_data
+**pl_transform_formula1_data**
+
 ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/3ae23c99197d9e2456a6c11c3513ef30b0517e37/Azure%20Data%20Factory/pl_transform.png?raw=true)
 
 <br>
