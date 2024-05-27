@@ -70,6 +70,8 @@ The pipeline can be automatically invoked using trigger in ADF. Below is the fin
 ### pl_transform_formula1_data
 ![alt text](https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/3ae23c99197d9e2456a6c11c3513ef30b0517e37/Azure%20Data%20Factory/pl_transform.png?raw=true)
 
+&nbsp;
+&nbsp;
 
 **- To read on:**
 **1. How to link Databricks to ADLS Gen2:**
@@ -80,7 +82,9 @@ The pipeline can be automatically invoked using trigger in ADF. Below is the fin
 
 - https://github.com/annisayusoff/Analysing-and-Reporting-on-Formula1-Data-Using-Azure-Databricks/blob/311150646033342eea17cf33ffcd4335b7656dec/Azure%20Data%20Factory/ADF.md
 
-*
-*
-*
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 Thank you!!
